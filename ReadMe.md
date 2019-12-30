@@ -1,7 +1,7 @@
 # Lottery
 ![Icon](icon.ico)
 
-This application is built for my senior high school's musical teacher, because the applications and webpages she used in lessions **suck**.  
+This application is built for my senior high school's music teacher, because the applications and webpages she used in lessions **suck**.  
 
 This application included two functions:
 
