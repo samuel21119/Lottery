@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <title>林瑩姿老師專用程式</title>
+</head>
+
+<body id="body">
+    <div id="home" style="position: absolute; left: 5px; top: 5px; display: none; height: 50px; width: 50px">
+        <img id="home2" class="bottom" src="img/home2.png">
+        <img id="home1" class="top" src="img/home1.png">
+    </div>
+    <div id="main">
+        <h1 id="h1">林瑩姿老師專用程式</h1>
+        <div id="scoreboard">
+            <a class="main_button1" role="button1">
+                <span>Scoreboard</span>
+                <div class="icon">
+                    <img src="img/scoreboard.svg">
+                </div>
+            </a>
+        </div>
+        <div id="lottery">
+            <a class="main_button2" role="button2">
+                <span>Lottery</span>
+                <div class="icon">
+                    <img src="img/dice.svg">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="page_lottery" class="page_lottery" style="display: none">
+        <section>
+            <number>
+                <div style="left: 50%;margin-right: -50%;">
+                    <center>
+                        <div class="can-toggle demo-rebrand-1" >
+                            <input id="d" type="checkbox">
+                            <label for="d">
+                                <div class="can-toggle__switch" data-checked="Custom" data-unchecked="Default"></div>
+                                <div class="can-toggle__label-text"></div>
+                            </label>
+                        </div>
+                        <div class="input" id="lottery_mode1">
+                            Start:<input type="number" class="text_box" id="lottery_start" autofocus ><br><br>
+                            End:<input type="number" class="text_box" id="lottery_end"><br><br>
+                            Times:<input type="number" class="text_box" id="lottery_cnt1" value=1><br><br>
+                            Repeat:<input class="tgl tgl-flip" id="lottery_repeat1" type="checkbox"><label class="tgl-btn" data-tg-off="Off" data-tg-on="On" for="lottery_repeat1"></label>
+                        </div>
+                        <div class="input" id="lottery_mode2">
+                            *One line per options<br>
+                            <textarea rows="9" cols="17" class="text_box" id="lottery_opt"></textarea><br><br>
+                            Pick times:<input type="number" class="text_box" id="lottery_cnt2" value=1><br><br>
+                            Repeat:<input class="tgl tgl-flip" id="lottery_repeat2" type="checkbox"><label class="tgl-btn" data-tg-off="Off" data-tg-on="On" for="lottery_repeat2"></label>
+                        </div>
+                    </center>
+                </div>
+            </number>
+            <result>Result<br>
+                <textarea rows="15" cols="17" class="text_box" id="lottery_result" style="border: none;"></textarea><br>
+                <div class="lottery-start" id="lottery-start" style="background-color: rgba(64, 64, 64, 5);">
+                    <div class="lottery-btn lottery-btn1">
+                        <span>Start</span>
+                    </div>
+                </div>
+                <div class="lottery-start" id="lottery-reset" style="background-color: rgba(64, 64, 64, 5);">
+                    <div class="lottery-btn lottery-btn1">
+                        <span>Reset</span>
+                    </div>
+                </div>
+            </result>
+        </section>
+    </div>
+
+    <div id="page_scoreboard" class="page_scoreboard" style="display: none; text-align: left;">
+        <l id="l">
+            <div class="scoreview" style="display: none;animation-duration: 0.5s;">
+                <input type="text" class="text_box group_name" value="組別1" style="position: relative; left: 10px;">
+                <div class="addscore">+1</div>
+                <div class="minusscore">-1</div>
+                <div style="position: relative; left: 6%; display: inline-block;">Score:<input type="text" class="text_box score_cnt" value="0" style="position: relative; width: 50px"></div>
+                <div class="remove_outer">
+                    <div class="remove_inner">
+                        <label>REMOVE</label>
+                    </div>
+                </div>
+            </div>
+        </l>
+        <div class="scoreview2" id="add_group" style="text-align: center;">+</div>
+
+    </div>
+
+    <script>var GROUP_PREFIX = "Group"</script>
+    <script src="app.js"></script>
+</body>

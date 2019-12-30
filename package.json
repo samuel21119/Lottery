@@ -1,0 +1,33 @@
+{
+  "name": "Lottery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.samuel.lottery.app",
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "category": "com.samuelhuang.app"
+    }
+  },
+  "author": "Samuel",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.7",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "chance": "^1.1.4",
+    "fs": "0.0.1-security",
+    "json2csv": "^4.5.4",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}
