@@ -1,7 +1,7 @@
 # Lottery
 ![Icon](icon.ico)
 
-This application is built for my senior high school's musical teacher, because the applications and webpages she used in lession **suck**.  
+This application is built for my senior high school's musical teacher, because the applications and webpages she used in lessions **suck**.  
 
 This application included two functions:
 
@@ -50,6 +50,7 @@ $ npm run dist
 3. Buttons to change score.
 4. Displays score. You can also change it by using your mouse and keyboard!
 5. Remove this group.
+6. Command+E or Ctrl+E to export data to CSV file.
 
 ### Lottery
 
